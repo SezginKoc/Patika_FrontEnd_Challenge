@@ -2,6 +2,6 @@
 
 ## Sezgin KOÇ
 
-### Hakkımda
+<h3 style="color:black"> <b>Hakkımda <b> <h3>
 
-### Sevdiğim Diziler ve Filmler
+<h3  style="color:black"> <b> Sevdiğim Diziler ve Filmler <b><h3>
