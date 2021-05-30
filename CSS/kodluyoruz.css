@@ -1,11 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: royalblue;
+}
+
 h1 {
-  color: rebeccapurple;
-  text-transform: uppercase;
-  font-family: "pattaya", sans-serif;
+  font-size: 30px;
 }
-h2 {
-  font-family: "pattaya", sans-serif;
+
+p {
+  font-size: 20px;
 }
-ul {
-  font-size: medium;
+
+#first-article {
+  font-size: 40px;
+}
+
+.text-red {
+  color: red;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-30 {
+  font-size: 30px;
 }
