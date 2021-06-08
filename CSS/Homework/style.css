@@ -1,7 +1,28 @@
 a {
-  margin: 0 10px;
+  text-decoration: none;
 }
-
-#home {
-  margin-left: 750px;
+h1,
+h2,
+h3,
+h5 {
+  text-align: center;
+}
+.link {
+  color: darkgoldenrod;
+  font-weight: bold;
+}
+.home {
+  margin-left: 780px;
+}
+.bracelet_type {
+  color: rgb(73, 0, 141);
+  font-style: oblique;
+}
+img {
+  /* width: 300px;
+  margin-left: 700px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
