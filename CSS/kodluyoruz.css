@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -33,4 +33,68 @@ p {
 
 .fs-30 {
   font-size: 30px;
+} */
+
+/* ! CSS  Selector */
+/* TODO) attribute selector */
+/* .btn[disabled] {
+  color: orchid;
+} */
+
+/* TODO) büyük küçük harf duyarlılığı vardır */
+/* div[title="deneme"] {
+  background-color: orange;
+} */
+
+/* TODO) ~= ( title'ı isim içeren divleri seç) */
+div[title~="isim"] {
+  background-color: orange;
+}
+
+/* TODO) ^= (https ile başlayanları seç)*/
+/* a[href^="https"] {
+  color: red;
+} */
+
+/* TODO) *= (href özelliği http olan a etiketlerine eriş)*/
+a[href*="http"] {
+  color: blue;
+}
+
+/* TODO) $= (class özeliiği sonunda test olan divlere eriştik.)*/
+div[class$="test"] {
+  background: yellow;
+}
+
+/* TODO) *= ve $= (birlikte kullanımı) */
+
+a[href*="https"][href$="com"] {
+  color: rgb(56, 8, 8);
+}
+
+/* TODO) ul+p  */
+/* ul + p {
+  color: green;
+} */
+/* TODO) ul~p  */
+/* ul ~ p {
+  color: red;
+} */
+
+/* TODO) Psuedo Classes */
+/* TODO) :link */
+/* a#google:link {
+  color: red;
+} */
+/* TODO) ::before */
+
+p::before {
+  content: "---training---";
+  font-weight: bold;
+  color: red;
+}
+
+p::after {
+  content: " ---training---";
+  color: brown;
 }
