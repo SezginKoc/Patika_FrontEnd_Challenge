@@ -52,9 +52,9 @@ div[title~="isim"] {
 }
 
 /* TODO) ^= (https ile başlayanları seç)*/
-/* a[href^="https"] {
+a[href^="https"] {
   color: red;
-} */
+}
 
 /* TODO) *= (href özelliği http olan a etiketlerine eriş)*/
 a[href*="http"] {
@@ -72,14 +72,15 @@ a[href*="https"][href$="com"] {
   color: rgb(56, 8, 8);
 }
 
-/* TODO) ul+p  */
-/* ul + p {
+/* TODO) ul+p: p etikiti ul etiketinden sonra gelmeli  */
+ul + p {
   color: green;
-} */
-/* TODO) ul~p  */
-/* ul ~ p {
+}
+
+/* TODO) ul~p: p ve ul etiketleri art arda olmalı  */
+ul ~ p {
   color: red;
-} */
+}
 
 /* TODO) Psuedo Classes */
 /* TODO) :link */
