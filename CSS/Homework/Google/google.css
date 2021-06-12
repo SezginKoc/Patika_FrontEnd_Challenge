@@ -76,10 +76,16 @@ nav a img {
   padding: 0px 10px;
 }
 .footer {
-  margin: 40px;
-  text-align: center;
-}
-.first-group {
   margin: 20px;
   text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+.first-group {
+  margin: 10px;
+  padding-right: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: baseline;
 }
