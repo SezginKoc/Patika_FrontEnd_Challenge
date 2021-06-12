@@ -4,10 +4,10 @@ nav a img {
   border-radius: 20px;
   display: block;
   float: right;
-  padding: 10px;
+  padding: 3px;
 }
 .products img {
-  width: 1.5%;
+  width: 1%;
   margin-left: auto;
   display: block;
   padding: 10px;
@@ -30,20 +30,56 @@ nav a img {
   display: block;
 }
 
-.searchbox .box {
-  width: 480px;
-  height: 30px;
-  border-radius: 20px;
-  border-left-color: rgb(189, 189, 189);
+.icon-text {
+  display: inline-block;
+  justify-content: ;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  background-color: rgb(255, 255, 255);
 }
+.search {
+  width: 480px;
+}
+.search {
+  /* width: 480px;
+  height: 35px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-left-color: rgb(189, 189, 189);
+  margin-left: auto;
+  margin-right: auto; */
+  /* display: flex; */
+  /* margin-top: 8px; */
+  /* z-index: auto; */
+}
+
 .fa-search {
   color: gray;
-  padding: 5px;
-  margin: -20px auto 0px auto;
-  display: inline-block;
-  float: left;
+
+  /* width: 90px; */
+  /* padding: 5px; */
+  /* display: flex;
+  justify-content: right; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin-top: -30.5px; */
+  /* background-color: rgb(255, 255, 255); */
+  /* z-index: auto; */
+  /* border-radius: 20px; */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  padding: 0px 10px;
+}
+.footer {
+  margin: 40px;
+  text-align: center;
+}
+.first-group {
+  margin: 20px;
   text-align: center;
 }
