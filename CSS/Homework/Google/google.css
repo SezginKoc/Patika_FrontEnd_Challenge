@@ -1,0 +1,49 @@
+nav a img {
+  width: 3%;
+  margin-left: auto;
+  border-radius: 20px;
+  display: block;
+  float: right;
+  padding: 10px;
+}
+.products img {
+  width: 1.5%;
+  margin-left: auto;
+  display: block;
+  padding: 10px;
+  float: right;
+}
+.head {
+  float: right;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-right: 6px;
+}
+.head a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.searchbox .box {
+  width: 480px;
+  height: 30px;
+  border-radius: 20px;
+  border-left-color: rgb(189, 189, 189);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.fa-search {
+  color: gray;
+  padding: 5px;
+  margin: -20px auto 0px auto;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
