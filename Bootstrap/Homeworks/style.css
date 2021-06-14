@@ -1,0 +1,36 @@
+* {
+  padding: 0px 5px;
+  width: auto;
+}
+* a {
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+
+.links span {
+  font-size: larger;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.links a {
+  color: rgb(0, 0, 0);
+}
+section h3 {
+  margin: 5px;
+  text-align: center;
+  font-size: 23px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(0, 0, 0);
+}
+article h4 {
+  margin: 10px 0px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
