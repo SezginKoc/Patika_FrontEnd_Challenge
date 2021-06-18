@@ -1,0 +1,69 @@
+                    <!-- ! Bilmemiz Gereken Bazı Terimler -->   
+
+<!--untracked (takip edilmemiş)--> git tarafından henüz takip edilmeyen, yani yeni oluşturulmuş dosyaları ifade eder.
+<!--unstaged(hazırlanmamış)--> Güncellenmiş ancak commit'lenmek için hazırlanmamış dosyaları ifade eder.
+<!--staged (hazırlanmış)--> Commit'lenmeye hazır olan dosyaları ifade eder.
+<!--deleted(silinmiş)-->  Projeden silinmiş ama Git üzerinden kaldırılmamış dosyaları ifade eder.
+
+
+
+        <!-- TODO) Deneme Landing Page Klasörüne git açıyoruz-->
+
+    <!-- Git init-->
+    Yukarıda bahsettiğimiz klasörü git bash üzerinde açtıktan sonra, git'i ilk defa bir projenin içinde başlatmak istiyorsak git bash üzerinde initialize et.  
+
+    <!-- Git status -->
+git status ile çalışılan proje üzerinin o anki durumundan bahseder. Yapılan değişiklikler, eklenen ve silinen dosyalar gibi bilgiler verilir.
+
+    <!--git add -->
+git add ile untracked olan dosyaları takip edebiliyoruz. Yeni eklenen veya üzerindeki değişiklik yapılan 
+dosyaları staged ortamına göndermek için kullanılır.  
+Üzerinde değişiklik yapılan ya da yeni eklenen tüm dosyaları tek seferde eklemek için git add * ya da git add -A . komutlarını da kullanabilirsiniz.
+Buradaki -A (all) tümü anlamındadır. “ . ” ise tüm dosya uzantılarını ifade eder. 
+Yani git add -A .txt komutunu çalıştırsaydık tüm .txt uzantılı dosyaları staged ortamına eklerdi.
+Peki biz bu dosyayı commit’lemekten vaz geçersek tekrar nasıl staged ortamından çıkartabiliriz? 
+Bunun için ihtiyacınız olan komut git reset "dosya ismi" ‘dir. 
+Bu komutla commit’lemek istemediğiniz dosyaları staged ortamından kolaylıkla çıkartabilirsiniz.
+git reset komutu dosyayı silmez. Sadece commit’lenmeye hazır durumda olma statüsünden çıkartır!
+
+    <!-- git commit --> Commit, staged ortamına alınan dosyaların Local Repository’e gönderilmesidir. 
+En iyi uygulama yöntemi her kayıt sırasında yapılan değişiklikleri açıklayıcı bir mesaj eklemektir. 
+Ayrıca her commit benzersiz bir kimliğe (unique ID) sahip olur. 
+Bu sayede eski bir commit'e geri dönebilirsiniz ve herhangi bir kayıp yaşama ihtimaliniz kalmaz.
+commit den çıkmak için " :q " kullanılır.
+    İlk komit edildiğinde globalde email ve isim sorularını sorar. 
+    Bunları git config --global user.email "....."
+            git config --global user.name "...."   şeklinde yazaraka gireriz
+
+    <!-- git config -->GIT’in bir çok konfigürasyon ve ayarı vardır, bunlardan ikisi user.name ve user.email olanıdır. 
+Bu ayarları yapılandırmak için aşağıdaki komutları kullanırız. GIT'i ilk kurduğumuzda genellikle aldığımız ilk hata bu configurasyon ayarlarını yapmadığımız için gelir. 
+Burada yazdığınız isim ve email ileride GitHub benzeri bir plat forma commit attığınızda da görüneceği için bunu bilerek isimlendirme yapmak yararlı olur. 
+Ayrıca görüldüğü gibi bu ayarlar --globalyani sistem genelinde geçerli ayarlardır. Proje bazlı bu ayarları değiştirebiliriz.
+            git config --global user.email "....."
+            git config --global user.name "...."  
+    
+    <!-- git diff--> Bir dosyada değişiklik yaptığında status ile projede hangi klasörün değiştiğini görebiliyoruz
+ama git diff ile o klasördeki değişikliğin tam olarak nerede olduğunu ve ne değiştiğini görürüz
+
+<!--TODO)  Değişiklik yaptığın dosyayı git add ile tekrardan commit lenecekler arasına yani stage kısmına almak gerek.--> 
+<!--TODO)  Sonrasında commit etmek gerek.-->
+
+    <!-- git rm --> git rm --cached "dosya ismi" ile dosyayı takipden çıkıyoruz.
+
+    <!-- git log--> Projedeki commit geçmişini görüntülememizi sağlar.
+Bütün commit'ler, id'si, yazarı, tarihi ve mesajı ile beraber listelenir.
+
+
+    <!-- github da repositry oluşturma --> "git remote add origin http://uzak_deponun_adresi.git" ile repository oluşturulur 
+github da repositry oluşturduktan sonra projeyi githuba atıyoruz.
+Githuba pushlarken yapılması gerekenler githubda repository oluşturduktan sonra çıkan sayfada anlatılıyor.
+Projenize README eklemek için vscode da bir markdown dosyası açıyoruz ya da github üzerinden de yapabiliriz.
+vscode da markdown (md) dosyası açtıktan sonra;
+# : h1 demek  
+## : h2 demek
+link vermek: [link ismi] (link adresi yazılır)
+
+    <!-- github push & pull --> vs code da commit ettikten sonra remote repositorye göndermek için 
+"git push -u origin master"  denir.
+github üzerinden bir şey değiştirildiğinde bunu vs code çalışma ortamımıza almak için 
+"git pull" yaparız
