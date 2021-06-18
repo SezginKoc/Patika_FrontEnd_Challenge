@@ -1,0 +1,12 @@
+.navbar-brand {
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+}
+.carousel-inner img {
+  width: 1710px;
+  height: 600px;
+}
+.navbar-nav {
+  margin-left: auto;
+}
