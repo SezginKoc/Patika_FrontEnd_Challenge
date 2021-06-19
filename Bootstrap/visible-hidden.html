@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Visible-Hidden</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+
+
+    <!-- TODO)
+Hidden on all	      =     .d-none
+Hidden only on xs     =	    .d-none .d-sm-block
+Hidden only on sm     =	    .d-sm-none .d-md-block
+Hidden only on md     =	    .d-md-none .d-lg-block
+Hidden only on lg     =	    .d-lg-none .d-xl-block
+Hidden only on xl     =	    .d-xl-none .d-xxl-block
+Hidden only on xxl    =     .d-xxl-none
+Visible on all	      =     .d-block
+Visible only on xs	  =     .d-block .d-sm-none
+Visible only on sm	  =     .d-none .d-sm-block .d-md-none
+Visible only on md	  =     .d-none .d-md-block .d-lg-none
+Visible only on lg	  =     .d-none .d-lg-block .d-xl-none
+Visible only on xl	  =     .d-none .d-xl-block .d-xxl-none
+Visible only on xxl	  =     .d-none .d-xxl-block
+    -->
+
+    <!-- visible ve hidden içinde iki farklı ölçününü aynı classda block ve none olarak 
+    yazılmasının sebebi; ekranlar sağa doğru genişler mantığı vardır. Mesela sadece orta boy ekranda 
+    gözükmesini istediğin bir şey için lg-none demezsen xl ve lg ekranda da gözükür. Sebebi ise 
+    en son md da kalınmıştır lg ve xl için bir şey belirtilmemiş. Bu yüzden lg-none diyerek hem lg ekranda
+    gözükmesini engelleriz hem de xl ekranda çünkü sağa doğru genişlerken xl gelir ve onunla ilgil bir şey belirtmiş olmayız  -->
+    
+    <h2 class="d-block d-sm-none">1   Mobil Görünüm</h2>
+    <h2 class="d-none d-sm-block d-md-none">2   Tablet Görünüm</h2>
+    <h2 class="d-none d-md-block d-lg-none">3   Laptop Görünüm</h2>
+    <h2 class="d-none d-lg-block d-xl-none">4   Normal Görünüm</h2>
+    <h2 class="d-none d-xl-block">5   Büyük Ekran Görünüm</h2>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-info">1 Lorem.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-warning">2 Aliquam.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger">3 Cum.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-primary">4 Nemo.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-success d-lg-none d-xl-block">5 Quia.</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-secondary d-lg-none d-xl-block">6 Accusantium.</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
