@@ -59,6 +59,7 @@ input.empty {
 .rightpanellinks {
   text-decoration: none;
   color: lightgrey;
+  background-color: white;
 }
 
 .rightpanellinks:hover {
