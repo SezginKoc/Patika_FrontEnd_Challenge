@@ -7,20 +7,25 @@ nav {
 ::placeholder {
   text-align: center;
   font-size: 14px;
-  color: gray;
+  color: rgb(99, 99, 99);
   background-position: 40%;
   background-size: 6%;
 }
-.collapse form svg {
-  height: 1px;
 
-  display: flex;
-  justify-content: start;
-  margin-top: -20px;
-  margin-left: 70px;
+.collapse form i {
+  margin-left: 100px;
+  height: 2px;
+  z-index: -500;
   background-repeat: no-repeat;
 }
 
+.navbar-collapse {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+.container .middlearea {
+  max-height: 200px !important;
+}
 input.empty {
   font-family: FontAwesome;
   font-style: normal;
