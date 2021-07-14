@@ -16,8 +16,7 @@ nav {
 }
 
 .collapse form i {
-  margin-left: 100px;
-  height: 2px;
+  margin-left: 10px;
   z-index: -500;
   background-repeat: no-repeat;
 }
