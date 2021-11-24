@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(
+    270deg,
+    rgba(78, 218, 243, 0.9),
+    rgba(200, 209, 66, 0.9)
+  );
+}
+
+.container {
+  text-align: center;
+  margin-top: 30vh;
+}
+.greeting,
+.time,
+.text {
+  margin: 1rem 0px;
+}
+.name {
+  color: red;
+  font-size: 50px;
+}
+
+.time {
+  color: red;
+  font-size: 100px;
+}
+
+.text,
+.greeting {
+  font-size: 30px;
+}

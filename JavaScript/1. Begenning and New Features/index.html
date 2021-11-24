@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Variables</title>
+    <style>
+        .deneme{
+            font-size: 80px;
+            font-weight:bolder;
+            background-image: linear-gradient(90deg, red, blue);
+            -webkit-background-clip: text;
+            color: transparent;
+        }  
+        
+        .ex{
+            border: 2px solid rgb(255, 0, 0);
+            display: inline-block;
+            margin-left:10px ;
+
+        }
+        .ex .hover{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .ex span{
+            margin: 10px;
+            font-size: 150px;
+            opacity:0;
+            transition: opacity 1300ms
+        }
+        .ex span:nth-child(1) {transition-delay: 200ms}
+        .ex span:nth-child(2) {transition-delay: 100ms}
+        .ex span:nth-child(3) {transition-delay: 300ms}
+        .ex span:nth-child(4) {transition-delay: 500ms}
+        .ex span:nth-child(5) {transition-delay: 200ms}
+        .ex span:nth-child(6) {transition-delay: 20ms}
+        
+        .ex:hover span{
+            opacity: 1;
+        }
+        #box{
+            display: none;
+        }
+        
+        #box:checked:hover ~ label div {
+            opacity: 0;
+            /* transition-delay:100ms; */
+            /* transition: opacity 1000ms; */
+        }  
+        #box:checked:hover::after ~ label div {
+            
+            transition: opacity 1000ms;
+        }
+        .button{
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="deneme">Deneme Yazısı Gradient</div>
+<input type="checkbox" id="box" checked>
+<label class="ex" for="box">
+    <div class="hover">Hover yap</div>
+    <span>D</span>
+    <span>E</span>
+    <span>N</span>
+    <span>E</span>
+    <span>M</span>
+    <span>E</span>
+</label>
+
+<div class="button">
+    <button onclick=button(1); class="one"> 1 </button>
+    <button onclick=button(2); class="two"> 2 </button>
+    <button onclick=button(3); class="three"> 3 </button>
+    <button onclick=button(4); class="four">4 </button>
+    <button onclick=button(5); class="five"> 5 </button>
+    <button onclick=button(6); class="six"> 6 </button>
+    <button onclick=button(7); class="seven"> 7 </button>
+    <button onclick=button(8); class="seven"> 8 </button>
+    <button onclick=button(9); class="seven"> 9 </button>
+    <button onclick=button(10); class="seven"> 10 </button>
+    <button onclick=button(11); class="seven"> 11 </button>
+    <button onclick=button(12); class="seven"> 12 </button>
+    <button onclick=button(13); class="seven"> 13 </button>
+    <button onclick=button(14); class="seven"> 14 </button>
+    <button onclick=button(15); class="seven"> 15 </button>
+    <button onclick=button(16); class="seven"> 16 </button>
+    <button onclick=button(17); class="seven"> 17 </button>
+    <button onclick=button(18); class="seven"> 18 </button>
+    <button onclick=button(19); class="seven"> 19 </button>
+    <button onclick=button(20); class="seven"> 20 </button>
+    <!-- <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span>
+    <span class="two"> 1 </span> -->
+</div>
+
+<h3 style="color: red;">Lorem, ipsum dolor.</h3>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,288L40,282.7C80,277,160,267,240,261.3C320,256,400,256,480,245.3C560,235,640,213,720,192C800,171,880,149,960,122.7C1040,96,1120,64,1200,74.7C1280,85,1360,139,1400,165.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    <script src="/info.js"></script>
+</body>
+</html>
