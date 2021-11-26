@@ -10,12 +10,12 @@ h5 {
 .link {
   color: darkgoldenrod;
   font-weight: bold;
+  text-align: center;
+  padding: 0px 10px;
 }
-.home {
-  margin-left: 780px;
-}
+
 .bracelet_type {
-  color: rgb(73, 0, 141);
+  color: rgb(5, 141, 0);
   font-style: oblique;
 }
 img {
